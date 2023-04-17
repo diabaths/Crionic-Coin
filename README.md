@@ -1,14 +1,9 @@
-<img src="https://i.ibb.co/3rvpw0v/68747470733a2f2f692e6962622e636f2f52767971784b4e2f626974636f696e2e706e67.png" alt="68747470733a2f2f692e6962622e636f2f52767971784b4e2f626974636f696e2e706e67" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br />
 
 # Crionic Core integration/staging tree
 ===========================================
-Crionic Core new release version : 9.3.0
+Crionic Core new release version : 1.1.0
 
-README.md Updated on September 21st 2022
-
-
-Bitcointalk ANN : https://bitcointalk.org/index.php?topic=5117428
-
+README.md Updated on april 17st 2023
 
 What is Crionic ?
 ----------------------
@@ -41,7 +36,7 @@ https://atomicdex.io/
 
 Any OS build instructions :
 
-https://github.com/diabaths/Crionic-Coin/doc/build-ALL-OS.md
+https://github.com/diabaths/Crionic-Coin/blob/master/doc/build-ALL-OS.md
 
 
 
@@ -98,7 +93,7 @@ information or see https://opensource.org/licenses/MIT.
 
 A copy of this license can be found here :
 
-https://github.com/MerlinMagic2018/Crionic-Core/COPYING
+https://github.com/diabaths/Crionic-Coin/blob/master/COPYING
 
 
 Development Process
