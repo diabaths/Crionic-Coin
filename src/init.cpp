@@ -526,8 +526,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/Crionic-dev/crionic>";
-    const std::string URL_WEBSITE = "<http://crionic.com>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/diabaths/Crionic-Coin>";
+    const std::string URL_WEBSITE = "<http://crionic.org>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
