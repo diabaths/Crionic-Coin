@@ -57,17 +57,17 @@ And modifications from Lighining-Cash Dev made here :        https://github.com/
 
 - The Hive : A "hodl and profit" mining system accessible to everyone, that works side by side with POW mining, invented by LitecoinCash's developers !!
 
-- YespowerLTNCG / Hive blocks ratio : 50 % / 50 % ( active since Hive 1.2 )
+- YespowerLTNCG / Hive blocks ratio : 75 % / 25 % ( active since Hive 1.1 )
 
-- Maximum Supply : 113,996,811 CRNC 
+- Maximum Supply : 335999919,891 CRNC 
 
-- Coins created so far : 2.200.000 CRNC ( @ Block # 0 , May 2th 2023 ) ---> 1 % of max supply
+- Coins created so far : 0 CRNC ( @ Block # 0 , May 2th 2023 ) ---> 0 % of max supply
 
-- Coins circulating : 62,315,986 CRNC  on September 13th 2022
+- Coins circulating : 0 CRNC  on September 13th 2022
 
-- Coins burned in the hive so far : 27,524,595 CRNC  on September 13th 2022 
+- Coins burned in the hive so far : 0 CRNC  on September 13th 2022 
 
-- First halving : Block #1050000 
+- First halving : Block #4200000
 
 - Official Mining Pool http://pool.crionic.org
 
@@ -75,14 +75,17 @@ And modifications from Lighining-Cash Dev made here :        https://github.com/
 
 - Number of confirmations needed for a transaction : 6  (transaction is confirmed in approximately 30.6 seconds)
 
-- Premine : 2,200,000 coins, just 1.93 % of max supply
+- Premine : 3.360.000 coins, just 1 % of max supply
 
-- Block Reward : 80 Crionic - halved every 1 050 000 blocks
+- Block Reward : 40 Crionic - halved every 4200000 blocks
+
+
 
 
 Crionic Core is based on Lightning-Cash Core , LitecoinCash Core, Litecoin Core and Bitcoin Core's open source codes.
 ( Bitcoin ---> Litecoin ---> LitecoinCash ---> Lightning-Cash ---> Crionic )
 Crionic is not directly associated with LitecoinCash's team, but was created with the help of Tanner / coldcity
+
 
 
 License

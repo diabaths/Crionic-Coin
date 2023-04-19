@@ -221,11 +221,11 @@ size_t nCoinCacheUsage = 5000 * 300;
 uint64_t nPruneTarget = 0;
 int64_t nMaxTipAge = DEFAULT_MAX_TIP_AGE;
 bool fEnableReplacement = DEFAULT_ENABLE_REPLACEMENT;
-const int nYesPowerFork = 247777; // 247777
-const int nSpeedFork = 310000; // ????
-const int nAdjustFork = 617777; // to leave enough time for old bees to die
-const int nLightFork = 5100000; // 2 weeks +
-const int nHiveRepairFork = 6345000; // fast 5 days
+const int nYesPowerFork = 5; // 247777
+const int nSpeedFork = 5; // ????
+const int nAdjustFork = 20; // to leave enough time for old bees to die
+const int nLightFork = 20; // 2 weeks +
+const int nHiveRepairFork = 20; // fast 5 days
 
 uint256 hashAssumeValid;
 arith_uint256 nMinimumChainWork;
@@ -1144,20 +1144,20 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
         return 0;
 
     if (nHeight == 1)
-        return 550000 * COIN * COIN_SCALE;
+        return 840000 * COIN * COIN_SCALE;
     if (nHeight == 2)
-        return 550000 * COIN * COIN_SCALE;
+        return 840000 * COIN * COIN_SCALE;
     if (nHeight == 3)
-	return 550000 * COIN * COIN_SCALE;
+	return 840000 * COIN * COIN_SCALE;
     if (nHeight == 4)
-	return 550000 * COIN * COIN_SCALE;
+	return 840000 * COIN * COIN_SCALE;
 
     CAmount nSubsidy;
     
     if (nHeight < nAdjustFork)
-	nSubsidy = 80 * COIN * COIN_SCALE;
+	nSubsidy = 40 * COIN * COIN_SCALE;
     else
-	nSubsidy = 8 * COIN * COIN_SCALE;
+	nSubsidy = 40 * COIN * COIN_SCALE;
 
     // Subsidy is cut in half every 2,100,000 blocks which will occur approximately every 5 months and a half.
     nSubsidy >>= halvings;
