@@ -18,7 +18,7 @@ RUN apt-get install -y libdb4.8-dev libdb4.8++-dev
 
 RUN apt-get install -y libminiupnpc-dev
 
-RUN git clone https://github.com/MerlinMagic2018/Crionic-Coin
+RUN git clone https://github.com/diabaths/Crionic-Coin
 
 WORKDIR /Crionic-Coin
 RUN ./autogen.sh

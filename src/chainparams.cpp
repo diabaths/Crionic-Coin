@@ -51,7 +51,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Lets Start Rolling For the final Test!!!";
+    const char* pszTimestamp = "28 Feb 2023 << Greek train crash, 57 dead people >> Fuck the politicians";
     const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -114,7 +114,7 @@ public:
 
         // Crionic: Hive 1.1: Deployment
         consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].bit = 9;
-        consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].nStartTime = 1681749846 + 5259486;  // June 17, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].nStartTime = 1681749846 + 5259486;  // June 17, 2023 
         consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].nTimeout = 1681749846 + 31536000 + 5259486;  // June 16, 2024
 
         // Crionic: Hive 1.2: Deployment
@@ -123,7 +123,7 @@ public:
  //       consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_2].nTimeout = 1566002000 + 31536000;  // active from the start
 
         // Crionic fields
-        consensus.powForkTime = 1681749846;                 // Time of PoW hash method change
+        consensus.powForkTime = 1683302629;                 // Time of PoW hash method change
         consensus.lastScryptBlock = 0;                // Height of last scrypt block
         consensus.powLimitSHA = uint256S("00000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");   // Initial hash target at fork ( for scrypt hashing !!! )
         consensus.slowStartBlocks = 125;                   // Scale post-fork block reward up over this many blocks
@@ -134,13 +134,13 @@ public:
 
         // Crionic: Hive: Consensus Fields
         consensus.minBeeCost = 10000;                       // Minimum cost of a bee, used when no more block rewards
-        consensus.beeCostFactor = 200;                     // Bee cost is block_reward/beeCostFactor
+        consensus.beeCostFactor = 500;                     // Bee cost is block_reward/beeCostFactor
         consensus.beeCreationAddress = "CReateLitecoinCashWorkerBeeXYs19YQ";        // Unspendable address for bee creation
-        consensus.hiveCommunityAddress = "MSmaYonpa9mr2zM1gnB1mujpeJWwPmD1Ys";      // Community fund address
-        consensus.hiveCommunityAddress2 = "MSmaYonpa9mr2zM1gnB1mujpeJWwPmD1Ys";
+        consensus.hiveCommunityAddress = "KJt5CcinFTjfk5Vutb3qPgxFKSBnVgYNzH";      // Community fund address
+        consensus.hiveCommunityAddress2 = "KJt5CcinFTjfk5Vutb3qPgxFKSBnVgYNzH";
         consensus.communityContribFactor = 10;              // Optionally, donate bct_value/maxCommunityContribFactor to community fund
-        consensus.beeGestationBlocks = 48*51;               // The number of blocks for a new bee to mature
-        consensus.beeLifespanBlocks = 48*24*29.75;              // The number of blocks a bee lives for after maturation
+        consensus.beeGestationBlocks = 48 * 51;               // The number of blocks for a new bee to mature 48*51
+        consensus.beeLifespanBlocks = 48 * 24 * 29,75;              // The number of blocks a bee lives for after maturation
         consensus.powLimitHive = uint256S("0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");  // Highest (easiest) bee hash target
         consensus.powLimitHive2 = uint256S("7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");  // Highest (easiest) bee hash target
         consensus.minHiveCheckBlock = 1;              // Don't bother checking below this height for Hive blocks (not used for consensus/validation checks, just efficiency when looking for potential BCTs)
@@ -174,7 +174,7 @@ public:
 
          consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");  // Crionic
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000b5b4eb9174289ab72e62a96fc8a719aa558cb37962fd2a17c77c9f6c8efb"); // Crionic
+        consensus.defaultAssumeValid = uint256S("0x000044f47682004b1e3ef9a5fc3a513e099f5231a62d7f8614495f47ad1dad1a"); // Crionic
 
 
 
@@ -183,19 +183,18 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */ 
-        pchMessageStart[0] = 0xaa;
-        pchMessageStart[1] = 0xae;
-        pchMessageStart[2] = 0x5b;
-        pchMessageStart[3] = 0x20;
+        pchMessageStart[0] = 0xca;
+        pchMessageStart[1] = 0xff;
+        pchMessageStart[2] = 0x77;
+        pchMessageStart[3] = 0x78;
         nDefaultPort = 6644;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1681749846, 322743, 0x1e0ffff0, 1, 50 * COIN * COIN_SCALE);
-		
+        genesis = CreateGenesisBlock(1683302629, 111141, 0x1e0ffff0, 1, 50 * COIN * COIN_SCALE);			
 			
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000b5b4eb9174289ab72e62a96fc8a719aa558cb37962fd2a17c77c9f6c8efb"));
-        assert(genesis.hashMerkleRoot == uint256S("0xcc483f5e0baa2876c50c94a5b77df2eb3f0df856ea73247d587ec4c70c710fd2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000044f47682004b1e3ef9a5fc3a513e099f5231a62d7f8614495f47ad1dad1a"));
+        assert(genesis.hashMerkleRoot == uint256S("0xfae971f1631f4c2c582d02b8875cfbfb4725db6277ed6ad975029a84646d6026"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
 
@@ -205,7 +204,7 @@ public:
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,28);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,45);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1,176);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
@@ -223,13 +222,13 @@ public:
 
         checkpointData = {
             {
-               {  0, uint256S("0x0000b5b4eb9174289ab72e62a96fc8a719aa558cb37962fd2a17c77c9f6c8efb")},
+               {  0, uint256S("0x000044f47682004b1e3ef9a5fc3a513e099f5231a62d7f8614495f47ad1dad1a")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data at genesis block.
-            1681749846, // * UNIX timestamp of last known number of transactions
+            1683302629, // * UNIX timestamp of last known number of transactions
             0,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
             0        // * estimated number of transactions per second after that timestamp
@@ -254,19 +253,19 @@ public:
         consensus.powLimit2 = uint256S("0007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3840; //
         consensus.nPowTargetSpacing = 60;
-        consensus.nPowTargetSpacing2 = 10;
+        consensus.nPowTargetSpacing2 = 25;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 192; // Require 75% of last 40 blocks to activate rulechanges
         consensus.nMinerConfirmationWindow = 256;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].bit = 28;
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1681834527; // // active from the start
-        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1681834527 + 31536000; // // June 17, 2023
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1683303184; // // active from the start
+        consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1683303184 + 31536000; // // June 17, 2023
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1681834527; // active from the start
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1681834527 + 31536000; // Start + 1 year
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1683303184; // active from the start
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1683303184 + 31536000; // Start + 1 year
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
@@ -280,8 +279,8 @@ public:
 
         // Crionic: Hive 1.1: Deployment
         consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].bit = 9;
-        consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].nStartTime = 1681834527;  // active from the start
-        consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].nTimeout = 1681834527 + 31536000;  // active from the start
+        consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].nStartTime = 1683303184;  // active from the start
+        consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_1].nTimeout = 1683303184 + 31536000;  // active from the start
 
         // Crionic: Hive 1.2: Deployment
  //       consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_2].bit = 10;
@@ -289,7 +288,7 @@ public:
  //       consensus.vDeployments[Consensus::DEPLOYMENT_HIVE_1_2].nTimeout = 1565998948 + 31536000;  // active from the start
 
         // Crionic fields
-        consensus.powForkTime = 1681834527;                 // Time of PoW hash method change (block 100)
+        consensus.powForkTime = 1683303184;                 // Time of PoW hash method change (block 100)
         consensus.lastScryptBlock = 0;                    // Height of last scrypt block
         consensus.powLimitSHA = uint256S("00000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");   // Initial hash target at fork
         consensus.slowStartBlocks = 125;                     // Scale post-fork block reward up over this many blocks
@@ -300,17 +299,17 @@ public:
 
         // Crionic: Hive: Consensus Fields
         consensus.minBeeCost = 10000;                       // Minimum cost of a bee, used when no more block rewards
-        consensus.beeCostFactor = 400;                     // Bee cost is block_reward/beeCostFactor
+        consensus.beeCostFactor = 500;                     // Bee cost is block_reward/beeCostFactor
         consensus.beeCreationAddress = "tEstNetCreateLCCWorkerBeeXXXYq6T3r";        // Unspendable address for bee creation
         consensus.hiveCommunityAddress = "t9ctP2rDfvnqUr9kmo2nb1LEDpu1Lc5sQn";      // Community fund address
         consensus.communityContribFactor = 10;              // Optionally, donate bct_value/maxCommunityContribFactor to community fund
-        consensus.beeGestationBlocks = 48*14;               // The number of blocks for a new bee to mature 24 times faster for testnet
+        consensus.beeGestationBlocks = 48*25;               // The number of blocks for a new bee to mature 24 times faster for testnet
         consensus.beeLifespanBlocks = 48*24*14;             // The number of blocks a bee lives for after maturation 24 times faster for testnet
         consensus.powLimitHive = uint256S("0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");  // Highest (easiest) bee hash target
         consensus.powLimitHive2 = uint256S("7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");  // Highest (easiest) bee hash target
         consensus.minHiveCheckBlock = 1;                  // Don't bother checking below this height for Hive blocks (not used for consensus/validation checks, just efficiency when looking for potential BCTs)
         consensus.hiveTargetAdjustAggression = 30;          // Snap speed for bee hash target adjustment EMA
-        consensus.hiveBlockSpacingTarget = 2;               // Target Hive block frequency (1 out of this many blocks should be Hivemined)
+        consensus.hiveBlockSpacingTarget = 4;               // Target Hive block frequency (1 out of this many blocks should be Hivemined)
         consensus.hiveNonceMarker = 192;                    // Nonce marker for hivemined blocks
 
         // Crionic: Hive 1.1-related consensus fields
@@ -335,27 +334,27 @@ public:
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");  // Crionic
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x0000c4242ba924701e12487766fe9c141eb1ea9703c7e82ebedbd5b63ec28082"); // Crionic: 0
+        consensus.defaultAssumeValid = uint256S("0x0000c41a07b28416e7d1c873826edcec41e59ec960c4215877b540b7a3068f60"); // Crionic: 0
 
-	pchMessageStart[0] = 0x16;
-        pchMessageStart[1] = 0x84;
-        pchMessageStart[2] = 0x34;
-        pchMessageStart[3] = 0x8c;
+	pchMessageStart[0] = 0x3e;
+        pchMessageStart[1] = 0x88;
+        pchMessageStart[2] = 0x55;
+        pchMessageStart[3] = 0x22;
         nDefaultPort = 56644;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1681834527, 119674, 0x1e0ffff0, 1, 50 * COIN * COIN_SCALE);	
+        genesis = CreateGenesisBlock(1683303184, 13886, 0x1e0ffff0, 1, 50 * COIN * COIN_SCALE);		
 	
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x0000c4242ba924701e12487766fe9c141eb1ea9703c7e82ebedbd5b63ec28082"));
-        assert(genesis.hashMerkleRoot == uint256S("0xcc483f5e0baa2876c50c94a5b77df2eb3f0df856ea73247d587ec4c70c710fd2"));
+        assert(consensus.hashGenesisBlock == uint256S("0x0000c41a07b28416e7d1c873826edcec41e59ec960c4215877b540b7a3068f60"));
+        assert(genesis.hashMerkleRoot == uint256S("0xfae971f1631f4c2c582d02b8875cfbfb4725db6277ed6ad975029a84646d6026"));
 
         vFixedSeeds.clear();
         //vSeeds.emplace_back("testseeds.litecoinca.sh");
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,127);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,58);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,107);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
@@ -372,12 +371,12 @@ public:
 
         checkpointData = {
             {
-               {  0, uint256S("0x0000c4242ba924701e12487766fe9c141eb1ea9703c7e82ebedbd5b63ec28082")},
+               {  0, uint256S("0x0000c41a07b28416e7d1c873826edcec41e59ec960c4215877b540b7a3068f60")},
             }
         };
 
         chainTxData = ChainTxData{
-            1681834527,
+            1683303184,
             0,
             0.0
         };

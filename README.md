@@ -24,14 +24,13 @@ Pool : https://pool.crionic.org
 
 Block Explorer : https://explorer.crionic.org
 
-Discord Server : https://discord.gg/v7uqs6nhSt 
+Discord Server : https://discord.gg/SKDkjcJTKM
 
 
 Exchanges : 
 
 Integration under way : 
 
-https://atomicdex.io/
 
 
 Any OS build instructions :
@@ -77,14 +76,55 @@ And modifications from Lighining-Cash Dev made here :        https://github.com/
 
 - Premine : 3.360.000 coins, just 1 % of max supply
 
-- Block Reward : 40 Crionic - halved every 4200000 blocks
+- Block Reward : 40 Crionic
+
+- Halved every 4200000 blocks
+
+
+The Hive Characteristics
+---------------------------------------------------------------------------
+
+- blocks for a new bee to mature: 48 * 51 = 2448 Blocks or ~= 12 Hours
+
+- blocks a bee lives for after maturation : 48 * 24 * 29,75= 34.272 Blocks or ~= 7 Days
+
+- Target Hive block frequency (1 out of this many blocks should be Hivemined) : 1 Every 4 Blocks 
+
+- Bee cost Creation : ~0.08 CRNC
+
+- Hive 1.1- Activated: June 17, 2023 (more bee lives and more) 
+
+- OPTIONAL to return 10% of bee Creation to community fund( will by used to promote the coin)
 
 
 
-
-Crionic Core is based on Lightning-Cash Core , LitecoinCash Core, Litecoin Core and Bitcoin Core's open source codes.
-( Bitcoin ---> Litecoin ---> LitecoinCash ---> Lightning-Cash ---> Crionic )
-Crionic is not directly associated with LitecoinCash's team, but was created with the help of Tanner / coldcity
+				Block Reward
+-------------------------------------------------------------------------------------------------------
+				
+From Block	To Block	Coins Reward	Total Coins Supply		Halving Time
+0		4.200.000	40,0000			168.000.000		19. July 2025
+4.200.001	8.400.000	20,0000			84.000.000		19. October 2027
+8.400.001	12.600.000	10,0000			42.000.000	        19. January 2030
+12.600.001	16.800.000	5,0000			21.000.000	        19. April 2032
+16.800.001	21.000.000	2,5000			10.500.000	        19. July 2034
+21.000.001	25.200.000	1,2500			5.250.000	        19. October 2036
+25.200.001	29.400.000	0,6250			2.625.000	        19. January 2039
+29.400.001	33.600.000	0,3125			1.312.500	        19. April 2041
+33.600.001	37.800.000	0,1563			656.250		        19. July 2043
+37.800.001	42.000.000	0,0781			328.125		        19. October 2045
+42.000.001	46.200.000	0,0391			164.063		        19. January 2048
+46.200.001	50.400.000	0,01953			82.031		        19. April 2050
+50.400.001	54.600.000	0,00977			41.016		        19. July 2052
+54.600.001	58.800.000	0,00488			20.508		        19. October 2054
+58.800.001	63.000.000	0,00244			10.254		        19. January 2057
+63.000.001	67.200.000	0,00122			5.127		        19. April 2059
+67.200.001	71.400.000	0,00061			2.563		        19. July 2061
+71.400.001	75.600.000	0,00031			1.282		        19. October 2063
+75.600.001	79.800.000	0,00015			641		        19. January 2066
+79.800.001	84.000.000	0,00008			320	       	        19. April 2068
+84.000.001	88.200.000	0,00004			160		        19. July 2070
+88.200.001	92.400.000	0,00002			80		        19. October 2072
+			Total Coins=			335.999.920	
 
 
 
