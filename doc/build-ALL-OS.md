@@ -37,7 +37,7 @@ Alternatively, to build with Qt 4 (NOT recommended) you need the following:
 
 sudo apt install git
 
-git clone https://github.com/MerlinMagic2018/Crionic-Coin
+git clone https://github.com/diabaths/Crionic-Coin
 
 cd Crionic-Coin
 
@@ -93,7 +93,7 @@ sudo apt-get install git
 
 sudo apt-get install curl
 
-git clone https://github.com/MerlinMagic2018/Crionic-Coin
+git clone https://github.com/diabaths/Crionic-Coin
 
 sudo chmod -R a+rw Crionic-Coin
 
@@ -147,7 +147,7 @@ sudo apt install libbz2-dev
 
 
 
-git clone https://github.com/MerlinMagic2018/Crionic-Coin
+git clone https://github.com/diabaths/Crionic-Coin
 
 cd Crionic-Coin
 
@@ -200,7 +200,7 @@ Linux ( linux-gnu, usable on ANY linux ):
 
 sudo apt-get update
 
-git clone https://github.com/MerlinMagic2018/Crionic-Coin
+git clone https://github.com/diabaths/Crionic-Coin
 
 cd Crionic-Coin
 
