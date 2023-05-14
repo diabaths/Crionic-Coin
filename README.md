@@ -49,7 +49,7 @@ Crionic Characteristics
 ( With the addition of modified Dash's DarkGravityWave v3 algorithm, that changes difficulty every block, and progressively lowers difficulty if long stale tips happens. Tested and fully working !!) ---> check DarkGravity V3 (https://github.com/dashpay/dash/blob/master/src/pow.cpp#L82) (By Evan Duffield)
  <evan@dash.org>
 
-And modifications from Lighining-Cash Dev made here :        https://github.com/MerlinMagic2018/Lightning-Cash/blob/main/src/pow.cpp#L110
+And modifications from Lighining-Cash Dev made here :        https://github.com/diabaths/Crionic-Coin/blob/master/src/pow.cpp#L110
 
 ( Difficulty adjusted every block and possibly in CURRENT block if a long network stale tip happens !! This protects Crionic from high hash variations and " high hash attacks " , that happens frequently for new coins and kills them by making the mining difficulty too high for the " normal " network's hash rate. )
 
@@ -58,15 +58,13 @@ And modifications from Lighining-Cash Dev made here :        https://github.com/
 
 - YespowerLTNCG / Hive blocks ratio : 75 % / 25 % ( active since Hive 1.1 )
 
-- Maximum Supply : 335999919,891 CRNC 
+- Maximum Supply : 335.999.919,891 CRNC 
 
-- Coins created so far : 0 CRNC ( @ Block # 0 , May 2th 2023 ) ---> 0 % of max supply
+- Coins created so far : 4.550.477 CRNC ( @ Block # 0 , May 14th 2023 ) ---> 0 % of max supply
 
-- Coins circulating : 0 CRNC  on September 13th 2022
+- Coins burned in the hive so far : 68.000 CRNC  on May 14th 2023 
 
-- Coins burned in the hive so far : 0 CRNC  on September 13th 2022 
-
-- First halving : Block #4200000
+- First halving : Block #4.200.000
 
 - Official Mining Pool http://pool.crionic.org
 
@@ -78,7 +76,7 @@ And modifications from Lighining-Cash Dev made here :        https://github.com/
 
 - Block Reward : 40 Crionic
 
-- Halved every 4200000 blocks
+- Halved every 4.200.000 blocks
 
 
 The Hive Characteristics
