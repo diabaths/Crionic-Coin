@@ -162,7 +162,7 @@ public:
         consensus.maxConsecutiveHiveBlocks = 4;             // Maximum hive blocks that can occur consecutively before a PoW block is required
         consensus.hiveDifficultyWindow = 24;                // How many blocks the SMA averages over in hive difficulty adjust
 
-	consensus.variableBeecost = true;
+	consensus.variableBeecost = true;	// need to check 
 	consensus.variableForkBlock = 67777;   // need to check 
 	consensus.isTestnet = false;
 	consensus.ratioForkBlock = 83880;
