@@ -163,7 +163,7 @@ public:
         consensus.hiveDifficultyWindow = 24;                // How many blocks the SMA averages over in hive difficulty adjust
 
 	consensus.variableBeecost = true;
-	consensus.variableForkBlock = 67777;
+	consensus.variableForkBlock = 67777;   // need to check 
 	consensus.isTestnet = false;
 	consensus.ratioForkBlock = 83880;
         consensus.beeLifespanBlocks2 = 48*24*33;
