@@ -96,9 +96,10 @@ The Hive Characteristics
 
 
 
-				Block Reward
+Block Reward
+---------------------------------------------------------------------------
 					
-[code]From Block	To Block	Coins Reward	Total Coins Supply		Halving Time
+From Block	To Block	Coins Reward	Total Coins Supply		Halving Time
 0		4.200.000	40,0000			168.000.000		19. July 2025
 4.200.001	8.400.000	20,0000			84.000.000		19. October 2027
 8.400.001	12.600.000	10,0000			42.000.000	        19. January 2030
@@ -121,7 +122,7 @@ The Hive Characteristics
 79.800.001	84.000.000	0,00008			320	       	        19. April 2068
 84.000.001	88.200.000	0,00004			160		        19. July 2070
 88.200.001	92.400.000	0,00002			80		        19. October 2072
-			Total Coins=			335.999.920	[/code]
+Total Coins=			335.999.920	
 
 
 
