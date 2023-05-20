@@ -159,16 +159,16 @@ public:
         consensus.powSplit2 = 0.000416;                       // Below this Hive difficulty threshold, PoW block chainwork bonus is halved again
         consensus.powSplit12 = 0.005;                        // Below this Hive difficulty threshold, PoW block chainwork bonus is halved
         consensus.powSplit22 = 0.0025;                       // Below this Hive difficulty threshold, PoW block chainwork bonus is halved again
-        consensus.maxConsecutiveHiveBlocks = 4;             // Maximum hive blocks that can occur consecutively before a PoW block is required
+        consensus.maxConsecutiveHiveBlocks = 2;             // Maximum hive blocks that can occur consecutively before a PoW block is required
         consensus.hiveDifficultyWindow = 24;                // How many blocks the SMA averages over in hive difficulty adjust
 
 	consensus.variableBeecost = true;	// need to check 
-	consensus.variableForkBlock = 67777;   // need to check 
+	consensus.variableForkBlock = 5000000;   // need to check 
 	consensus.isTestnet = false;
-	consensus.ratioForkBlock = 83880;
-        consensus.beeLifespanBlocks2 = 48*24*33;
-        consensus.beeLifespanBlocks3 = 48*24*33;
-	consensus.remvariableForkBlock = 118956;
+	consensus.ratioForkBlock = 5000000;
+        consensus.beeLifespanBlocks2 = 48*24*29,75;
+        consensus.beeLifespanBlocks3 = 48*24*29,75;
+	consensus.remvariableForkBlock = 5000000;
         
         // The best chain should have at least this much work.
 
@@ -223,15 +223,16 @@ public:
         checkpointData = {
             {
                {  0, uint256S("0x000044f47682004b1e3ef9a5fc3a513e099f5231a62d7f8614495f47ad1dad1a")},
+	       {  50802, uint256S("0x3d601d28d6529d926b5858bd498163730dfa6c2daf25b2e01561fd3e9ba8ad5c")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data at genesis block.
-            1683302629, // * UNIX timestamp of last known number of transactions
-            0,   // * total number of transactions between genesis and that timestamp
+            1684433032, // * UNIX timestamp of last known number of transactions
+            158296,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0        // * estimated number of transactions per second after that timestamp
+            0.1691860501303988        // * estimated number of transactions per second after that timestamp
         };
     }
 };
@@ -303,7 +304,7 @@ public:
         consensus.beeCreationAddress = "tEstNetCreateLCCWorkerBeeXXXYq6T3r";        // Unspendable address for bee creation
         consensus.hiveCommunityAddress = "t9ctP2rDfvnqUr9kmo2nb1LEDpu1Lc5sQn";      // Community fund address
         consensus.communityContribFactor = 10;              // Optionally, donate bct_value/maxCommunityContribFactor to community fund
-        consensus.beeGestationBlocks = 48*25;               // The number of blocks for a new bee to mature 24 times faster for testnet
+        consensus.beeGestationBlocks = 48*0.2;               // The number of blocks for a new bee to mature 24 times faster for testnet
         consensus.beeLifespanBlocks = 48*24*14;             // The number of blocks a bee lives for after maturation 24 times faster for testnet
         consensus.powLimitHive = uint256S("0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");  // Highest (easiest) bee hash target
         consensus.powLimitHive2 = uint256S("7ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");  // Highest (easiest) bee hash target
@@ -325,10 +326,10 @@ public:
 	consensus.variableBeecost = true;
 	consensus.variableForkBlock = 5000000; // never happens
 	consensus.isTestnet = true;
-	consensus.ratioForkBlock = 5500000; // never happens
+	consensus.ratioForkBlock = 5000000; // never happens
         consensus.beeLifespanBlocks2 = 48*24*21;
         consensus.beeLifespanBlocks3 = 48*24*21;
-	consensus.remvariableForkBlock = 2000000; // never happens
+	consensus.remvariableForkBlock = 5000000; // never happens
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");  // Crionic

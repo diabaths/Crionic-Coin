@@ -137,9 +137,9 @@ QVariant HiveTableModel::data(const QModelIndex &index, int role) const {
                             blocksTillMature = rec->blocksLeft - Params().GetConsensus().beeLifespanBlocks;
                         
                         
-                        status = "Matures in " + QString::number(blocksTillMature) + " blocks (" + secondsToString(blocksTillMature * Params().GetConsensus().nPowTargetSpacing2 / 2) + ")";
+                        status = "Matures in " + QString::number(blocksTillMature) + " blocks ";
                     } else if (rec->beeStatus == "mature")
-                        status = "Expires in " + QString::number(rec->blocksLeft) + " blocks (" + secondsToString(rec->blocksLeft * Params().GetConsensus().nPowTargetSpacing2 / 2) + ")";
+                        status = "Expires in " + QString::number(rec->blocksLeft) + " blocks ";
                     return status;
                 }
             case Cost:
