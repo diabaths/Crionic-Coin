@@ -8,7 +8,7 @@ README.md Updated on april 17st 2023
 What is Crionic ?
 ----------------------
 
-Crionic is a coin based on Lightning-Cash ( LNC ),with Yespower POW algorithm, including DarkGravityWave ( difficulty changes for every block ) and possible CURRENT block difficulty change over time to protect against high network hash variation and long stale tip. It is also 15 times faster than LitecoinCash. For full details, please visit our website at https://crionic.org, or visit Litecoin Cash's website here : https://litecoinca.sh 
+Crionic is a coin based on Lightning-Cash ( LNC ),with Yespower POW algorithm, including DarkGravityWave ( difficulty changes for every block ) and possible CURRENT block difficulty change over time to protect against high network hash variation and long stale tip. It is also 15 times faster than LitecoinCash. For full details, please visit our website at https://coin.crionic.org, or visit Litecoin Cash's website here : https://litecoinca.sh 
 
 Compiled binary releases are available here on Github.
 Whitepapers will be available soon.
@@ -18,7 +18,7 @@ Current supported version are 1.1.0
 Crionic Core is the full node software that makes up the backbone of the Crionic p2p network.
 
 
-Website : https://crionic.org
+Website : https://coin.crionic.org
 
 Pool : https://pool.crionic.org
 

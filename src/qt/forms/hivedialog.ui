@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
+    <width>1050</width>
     <height>400</height>
    </rect>
   </property>
@@ -88,7 +88,7 @@
         </font>
        </property>
        <property name="text">
-        <string>&lt;span style=&quot;color:#ff0000;&quot;&gt;Please &lt;a href=&quot;https://hive.litecoinca.sh/guide/&quot;&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;learn about The Hive&lt;/span&gt;&lt;/a&gt; before creating bees&lt;/span&gt;</string>
+        <string>&lt;span style=&quot;color:#ff0000;&quot;&gt;Please &lt;a href=&quot;https://coin.crionic.org/?page_id=326&quot;&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;learn about The Hive&lt;/span&gt;&lt;/a&gt; before creating bees&lt;/span&gt;</string>
        </property>
        <property name="openExternalLinks">
         <bool>true</bool>
@@ -223,7 +223,7 @@ background-color:white;}</string>
            <enum>Qt::StrongFocus</enum>
           </property>
           <property name="toolTip">
-           <string>The community fund works by diverting a portion of the unspendable bee creation fee to the spendable community fund address. This enables us to keep developing Litecoin Cash.</string>
+           <string>The community fund works by diverting a portion of the unspendable bee creation fee to the spendable community fund address. This enables us to keep developing Crionic Coin.</string>
           </property>
           <property name="text">
            <string>Send 10% of bee fee to Community Fund (Bee price remains the same and you still get the same number of bees)</string>
@@ -656,7 +656,7 @@ the network is saturated with the maximum number of bees that are expected
 to make back their cost. At values below 100, it is expected at all bees will be profitable.</string>
            </property>
            <property name="text">
-            <string>&lt;a href=&quot;https://hive.litecoinca.sh/gi/&quot;&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Global index&lt;/span&gt;&lt;/a&gt;: </string>
+            <string>&lt;a href=&quot;https://coin.crionic.org/?page_id=326&quot;&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;Global index&lt;/span&gt;&lt;/a&gt;: </string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
