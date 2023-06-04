@@ -172,9 +172,9 @@ public:
         
         // The best chain should have at least this much work.
 
-         consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000000000");  // Crionic
+         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000007339e2df009");  // Crionic: block 119647
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x000044f47682004b1e3ef9a5fc3a513e099f5231a62d7f8614495f47ad1dad1a"); // Crionic
+        consensus.defaultAssumeValid = uint256S("0x9f705e9d3726701131f4de08f8415cb0c9a78cc606c061ca3b56eea2de693d4b"); // Crionic :  block 118670
 
 
 
@@ -224,15 +224,16 @@ public:
             {
                {  0, uint256S("0x000044f47682004b1e3ef9a5fc3a513e099f5231a62d7f8614495f47ad1dad1a")},
 	       {  50802, uint256S("0x3d601d28d6529d926b5858bd498163730dfa6c2daf25b2e01561fd3e9ba8ad5c")},
+	       {  118670, uint256S("0x9f705e9d3726701131f4de08f8415cb0c9a78cc606c061ca3b56eea2de693d4b")},
             }
         };
 
         chainTxData = ChainTxData{
             // Data at genesis block.
-            1684433032, // * UNIX timestamp of last known number of transactions
-            158296,   // * total number of transactions between genesis and that timestamp
+            1685696043, // * UNIX timestamp of last known number of transactions
+            328234,   // * total number of transactions between genesis and that timestamp
                         //   (the tx=... number in the SetBestChain debug.log lines)
-            0.1691860501303988        // * estimated number of transactions per second after that timestamp
+            0.1273731270031677        // * estimated number of transactions per second after that timestamp
         };
     }
 };
