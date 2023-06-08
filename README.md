@@ -28,6 +28,8 @@ Discord Server : https://discord.gg/SKDkjcJTKM
 
 
 Exchanges : 
+https://xeggex.com/market/CRNC_USDT 
+
 
 Integration under way : 
 
